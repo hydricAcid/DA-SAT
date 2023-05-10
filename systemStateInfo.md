@@ -10,3 +10,11 @@ Here are the percentages I'm planning to use:
 Another factor to consider is that different operating system use hardware on the computer differently. For example, a GNU/Linux system typically allocates 
 less resources on tasks than a Windows system since it is more lightweight. Therefore average RAM usage between Linux and Windows system will differ.
 
+Below is an image of RAM usage on a Linux system that is on idle. Only about 1GB of RAM is being used. Note that this system has 8GB RAM
+![image](https://github.com/idontuseg1t/DA-SAT/assets/111327977/be52365a-8be6-426b-a9c6-9c6656982643)
+
+Meanwhile, below shows another image of a Windows system also on idle, but using significantly more than the Linux system (4GB RAM). Note that this 
+system has a total of 16GB RAM available.
+![image](https://github.com/idontuseg1t/DA-SAT/assets/111327977/83b96f6f-75a3-4bbb-987a-41ec953b5a1c)
+
+Note that the difference in RAM between both systems is also a factor on how much RAM is allocated to tasks.
