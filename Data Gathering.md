@@ -1,3 +1,7 @@
+# Gathering Data
+
+Since I will be collecting hardware info from the computer itself, my data set will mostly consist of primary data collected from observations. This will mean that my data will be as accurate as possible. Since my graphical presentation of the data will also be dynamic, the data will be frequently changing and the graphs will need to reflect this. Also, mainly collecting data using observations of hardware data from the computer greatly limits my data sources, meaning that I will have a lack of secondary data. To rectify this, I will collect different system states from 2 different systems and compare them.
+
 <h1>CPU STATS</h1>
 
 Command used:
