@@ -1,4 +1,4 @@
-CPU STATS
+<h1>CPU STATS</h1>
 
 Command used:
 ```
@@ -41,3 +41,5 @@ cpu  109042 5 38646 3622213 3005 6651 3651 0 0 0
 ```
 
 and calculates usage from that data
+
+<h1>RAM Statistics</h1>
