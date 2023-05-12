@@ -59,3 +59,8 @@ Sample output:
 Mem:            7615        2235        2800         224        2580        4855
 Swap:              0           0           0
 ```
+This output is easier to read than cpu stats, since there are labels for the columns.
+We will only need to read the first line, since swap is irrelevant in our case.
+```
+Mem:            7615        2235        2800         224        2580        4855
+```
