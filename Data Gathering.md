@@ -64,3 +64,4 @@ We will only need to read the first line, since swap is irrelevant in our case.
 ```
 Mem:            7615        2235        2800         224        2580        4855
 ```
+In the scripts folder, there is a bash script used to clean this output -> ramRead.sh
