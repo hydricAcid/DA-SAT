@@ -47,3 +47,15 @@ cpu  109042 5 38646 3622213 3005 6651 3651 0 0 0
 and calculates usage from that data
 
 <h1>RAM Statistics</h1>
+
+Command used:
+```
+free -m
+```
+
+Sample output:
+```
+               total        used        free      shared  buff/cache   available
+Mem:            7615        2235        2800         224        2580        4855
+Swap:              0           0           0
+```
