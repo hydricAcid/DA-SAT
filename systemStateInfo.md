@@ -8,6 +8,12 @@ Here are the percentages I'm planning to use:
 - average ram usage: 0% - 59%, high: 60% - 100%
 
 A "high" system state may suggest that you need to kill some tasks that are taking up too many resources in order for your computer to run faster.
+<h3>UPDATE</h3>
+Instead of using average and high, I may switch to these values instead. This decision was made as these terms are better associated with computer terminology.
+- Green/Optimal: The system is running normally, >29% CPU, >39% RAM
+- Amber/Warning: The computer is under heavy load. Maintaining this state is fine but power consumption may be increased, 30<CPU<79, 40<RAM<69
+- Red/Critical: The computer is under extremely heavy load, it is recommended to kill high demanding processes, CPU>80, RAM>70
+
 
 Another factor to consider is that different operating system use hardware on the computer differently. For example, a GNU/Linux system typically allocates 
 less resources on tasks than a Windows system since it is more lightweight. Therefore average RAM usage between Linux and Windows system will differ.
