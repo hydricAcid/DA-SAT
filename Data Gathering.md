@@ -8,13 +8,14 @@ Data collection is conducted through the excecution of commands via a bash scrip
 <h2>CPU STATS</h2>
 We use a command to collect the CPU stats of the machine.
 Command used:
-```
-cat /proc/stat | grep cpu
 
+```bash
+cat /proc/stat | grep cpu
 ```
 
 The 'cat' command outputs the contents of a file to the command line. In this case, we are outputting the contents of a file named 'stat' on the 'proc' directory. /proc/stat contains information about the machine's system, including CPU statistics.
 More information about the /proc filesystem can be found in the official Linux kernel documentation: https://www.kernel.org/doc/html/latest/filesystems/proc.html
+
 
 
 OUTPUT
