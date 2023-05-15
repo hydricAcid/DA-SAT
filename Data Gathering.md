@@ -14,6 +14,7 @@ cat /proc/stat | grep cpu
 ```
 
 The 'cat' command outputs the contents of a file to the command line. In this case, we are outputting the contents of a file named 'stat' on the 'proc' directory. /proc/stat contains information about the machine's system, including CPU statistics.
+
 More information about the /proc filesystem can be found in the official Linux kernel documentation: https://www.kernel.org/doc/html/latest/filesystems/proc.html
 
 
@@ -62,7 +63,9 @@ Command used:
 free -m
 ```
 The command 'free' parses information from /proc/meminfo (again from /proc) meaning that it is easier for me to work with the output of the command instead of directly getting the contents directly from /proc/meminfo. This data is still accurate as no information has changed, it is just organised. The '-m' option just changes the format to mebibytes.
+
 The 'free' man page can be found here: https://www.man7.org/linux/man-pages/man1/free.1.html
+
 More information on the 'free' command can be found here: https://linuxhandbook.com/free-command/
 
 Sample output:
