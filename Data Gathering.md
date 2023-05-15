@@ -2,13 +2,20 @@
 
 Since I will be collecting hardware info from the computer itself, my data set will mostly consist of primary data collected from observations. This will mean that my data will be as accurate as possible. Since my graphical presentation of the data will also be dynamic, the data will be frequently changing and the graphs will need to reflect this. Also, mainly collecting data using observations of hardware data from the computer greatly limits my data sources, meaning that I will have a lack of secondary data. To rectify this, I will collect different system states from 2 different systems and compare them.
 
-<h1>CPU STATS</h1>
+<h1>Data Collection</h1>
+Data collection is conducted through the excecution of commands via a bash script and cleaning the raw output so that the values are suitable for graphing. Hardware utulisation data is collected directly from the operating system itself, meaning that this data is extremely reliable.
 
+<h2>CPU STATS</h2>
+We use a command to collect the CPU stats of the machine.
 Command used:
 ```
 cat /proc/stat | grep cpu
 
 ```
+The 'cat' command outputs the contents of a file to the command line. In this case, we are outputting the contents of a file named 'stat' on the 'proc' directory. /proc/stat contains information about the machine's system, including CPU statistics.
+More information about the /proc filesystem can be found in the official Linux kernel documentation: https://www.kernel.org/doc/html/latest/filesystems/proc.html
+
+
 OUTPUT
 ```
 cpu  109042 5 38646 3622213 3005 6651 3651 0 0 0
@@ -46,12 +53,15 @@ cpu  109042 5 38646 3622213 3005 6651 3651 0 0 0
 
 and calculates usage from that data
 
-<h1>RAM Statistics</h1>
-
+<h2>RAM Statistics</h2>
+Similarly, a command is used to collect the RAM statistics of the machine.
 Command used:
 ```
 free -m
 ```
+The command 'free' parses information from /proc/meminfo (again from /proc) meaning that it is easier for me to work with the output of the command instead of directly getting the contents directly from /proc/meminfo. This data is still accurate as no information has changed, it is just organised. The '-m' option just changes the format to mebibytes.
+The 'free' man page can be found here: https://www.man7.org/linux/man-pages/man1/free.1.html
+More information on the 'free' command can be found here: https://linuxhandbook.com/free-command/
 
 Sample output:
 ```
@@ -59,7 +69,7 @@ Sample output:
 Mem:            7615        2235        2800         224        2580        4855
 Swap:              0           0           0
 ```
-This output is easier to read than cpu stats, since there are labels for the columns.
+This output is easier to read than cpu stats, since there are labels for the columns. The 'free' command has cleaned up data from /proc/meminfo for us, but even though this data has already been cleaned, we will need to clean it up further for our use.
 We will only need to read the first line, since swap is irrelevant in our case.
 ```
 Mem:            7615        2235        2800         224        2580        4855
