@@ -12,4 +12,4 @@ Gathering hardware utulisation information using BASH commands will be the prima
 
 <h2>Criteria 3 - https://docs.google.com/document/d/1Cm8-zP7yiYxYu7MXAEzfITjUooZBon-Or1YcG0wRYik/edit</h2>
 
-Criteria 4 - Data Gathering.md
+<h2>Criteria 4 - Data Gathering.md</h2>
