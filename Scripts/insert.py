@@ -1,6 +1,6 @@
 import sqlite3
 
-MAX_ROWS = 60  # Define the maximum number of rows you want to keep
+MAX_ROWS = 60  # 60 seconds for 1 minute
 
 def insert_line(content):
     cursor.execute("INSERT INTO lines (content) VALUES (?)", (content,))
@@ -25,7 +25,7 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS lines (
 
 conn.commit()
 
-filename = 'cpuFile.txt'  # Replace with your text file name
+filename = 'cpuFile.txt'  
 
 with open(filename, 'r') as file:
     line = file.readline().strip()
