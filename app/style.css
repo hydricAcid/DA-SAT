@@ -16,6 +16,7 @@
     left: 100px;
     width: 300px;
     padding: 10px;
+    top:100px;
     text-align: center;
 }
 
@@ -25,6 +26,7 @@
     right: 100px;
     width: 300px;
     padding: 10px;
+    top:100px;
     text-align: center;
 }
 .graph1{
@@ -33,7 +35,7 @@
     left: 100px;
     width: 300px;
     padding: 10px;
-    top:300px;
+    top:350px;
     text-align: center;
 
 }
@@ -44,7 +46,7 @@
     right: 100px;
     width: 300px;
     padding: 10px;
-    top:300px;
+    top:350px;
     text-align: center;
 
 }
