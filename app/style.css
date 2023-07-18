@@ -16,6 +16,7 @@
     left: 100px;
     width: 300px;
     padding: 10px;
+    text-align: center;
 }
 
 .meter2{
@@ -24,6 +25,7 @@
     right: 100px;
     width: 300px;
     padding: 10px;
+    text-align: center;
 }
 .graph1{
     color:darkmagenta;
@@ -31,6 +33,8 @@
     left: 100px;
     width: 300px;
     padding: 10px;
+    top:300px;
+    text-align: center;
 
 }
 
@@ -40,5 +44,7 @@
     right: 100px;
     width: 300px;
     padding: 10px;
+    top:300px;
+    text-align: center;
 
 }
