@@ -1,0 +1,44 @@
+#test {
+    color: blue;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    position: relative;
+  }
+  
+.meter1{
+    color:red;
+    position: absolute;
+    left: 100px;
+    width: 300px;
+    padding: 10px;
+}
+
+.meter2{
+    color:red;
+    position: absolute;
+    right: 100px;
+    width: 300px;
+    padding: 10px;
+}
+.graph1{
+    color:darkmagenta;
+    position: absolute;
+    left: 100px;
+    width: 300px;
+    padding: 10px;
+
+}
+
+.graph2{
+    color:darkmagenta;
+    position: absolute;
+    right: 100px;
+    width: 300px;
+    padding: 10px;
+
+}
