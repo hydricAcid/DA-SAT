@@ -106,13 +106,15 @@ body {
     transform-origin: center top;
     transition: all 1.3s ease-in-out;
   }
+  /*
 .container:hover .gauge-c1  {  transform:rotate(.5turn);
   }
 
   .container:hover .gauge-c2  {  transform:rotate(.5turn);
-  }
-.container:hover { color: rgba(255,255,255,1); }
-  .gauge-data {
+  } 
+.container:hover { color: rgba(255,255,255,1); }*/
+ 
+.gauge-data {
     z-index: 4;
 
     color: rgba(255,255,255,.2);
