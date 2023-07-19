@@ -33,7 +33,7 @@ body {
 .graph1{
     color:darkmagenta;
     position: absolute;
-    left: 300px;
+    left: 200px;
     width: 300px;
     top:550px;
 
@@ -80,10 +80,10 @@ body {
     margin-right: auto;
     border-radius: 250px 250px 0px 0px;
   }
-.gauge-c {
+.gauge-c1{
     z-index: 2;
     position: absolute;
-    background-color: #5664F9;
+    background-color: #10ff14;
     width: 400px;
     height: 200px;
     top: 200px;
@@ -93,7 +93,24 @@ body {
     transform-origin: center top;
     transition: all 1.3s ease-in-out;
   }
-.container:hover .gauge-c {  transform:rotate(.5turn);
+
+  .gauge-c2{
+    z-index: 2;
+    position: absolute;
+    background-color: #1e30f4;
+    width: 400px;
+    height: 200px;
+    top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px 0px 200px 200px;
+    transform-origin: center top;
+    transition: all 1.3s ease-in-out;
+  }
+.container:hover .gauge-c1  {  transform:rotate(.5turn);
+  }
+
+  .container:hover .gauge-c2  {  transform:rotate(.5turn);
   }
 .container:hover { color: rgba(255,255,255,1); }
   .gauge-data {
