@@ -42,11 +42,10 @@ body {
 .graph2{
     color:darkmagenta;
     position: absolute;
-    right: 300px;
+    right: 200px;
     width: 300px;
-    padding: 10px;
     top:550px;
-    text-align: center;
+
 
 }
 
@@ -129,8 +128,15 @@ body {
 }
 
 
-#chartContainer {
+#chartContainer1 {
     width: 500px;
     height: 300px;
     border: 1px solid #ccc;
   }
+
+
+#chartContainer2 {
+  width: 500px;
+  height: 300px;
+  border: 1px solid #ccc;
+}

@@ -1,17 +1,19 @@
+import time
 import sqlite3
 
-MAX_ROWS = 60  # 60 seconds for 1 minute
+MAX_ROWS = 60 
 
 def insert_line(content):
-    cursor.execute("INSERT INTO lines (content) VALUES (?)", (content,))
+    timestamp = int(time.time())  # Get the current Unix timestamp
+    cursor.execute("INSERT INTO lines (content, timestamp) VALUES (?, ?)", (content, timestamp))
     conn.commit()
 
 def get_lines():
-    cursor.execute("SELECT content FROM lines ORDER BY id ASC")
+    cursor.execute("SELECT content FROM lines ORDER BY timestamp ASC")
     return cursor.fetchall()
 
 def delete_oldest_entry():
-    cursor.execute("SELECT id FROM lines ORDER BY id ASC LIMIT 1")
+    cursor.execute("SELECT id FROM lines ORDER BY timestamp ASC LIMIT 1")
     oldest_id = cursor.fetchone()[0]
     cursor.execute("DELETE FROM lines WHERE id = ?", (oldest_id,))
     conn.commit()
@@ -21,12 +23,12 @@ cursor = conn.cursor()
 
 cursor.execute('''CREATE TABLE IF NOT EXISTS lines (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
-                    content TEXT NOT NULL)''')
+                    content TEXT NOT NULL,
+                    timestamp INTEGER NOT NULL)''')
 
 conn.commit()
 
-filename = 'cpuFile.txt'  
-
+filename = 'cpuFile.txt'
 with open(filename, 'r') as file:
     line = file.readline().strip()
     insert_line(line)
@@ -38,6 +40,3 @@ row_count = cursor.fetchone()[0]
 if row_count > MAX_ROWS:
     delete_oldest_entry()
 
-lines = get_lines()
-for line in lines:
-    print(line[0])

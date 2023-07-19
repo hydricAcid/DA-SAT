@@ -1,6 +1,6 @@
 <?php
 // Connect to the SQLite database
-$pdo = new PDO('sqlite:/home/kyle/Projects/DA-SAT/Scripts/data1.db');
+$pdo = new PDO('sqlite:../Scripts/data1.db');
 
 $query = $pdo->query('SELECT content FROM lines');
 $data = $query->fetchAll(PDO::FETCH_COLUMN, 0);

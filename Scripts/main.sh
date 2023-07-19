@@ -23,6 +23,7 @@ while :; do
     echo "$cpu_usage" > cpuFile.txt
 
     ./ramRead.sh
-    python insert.py
+    python cpuInsert.py
+    python ramInsert.py
     sleep 1
 done
