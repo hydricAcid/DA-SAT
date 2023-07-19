@@ -43,5 +43,5 @@ with open('ramFile.txt', 'r') as file:
     # Commit the deletion
     conn.commit()
 
-# Close the database connection
+
 conn.close()

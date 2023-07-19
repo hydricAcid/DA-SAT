@@ -42,7 +42,7 @@ window.addEventListener('load', function() {
             ctx.fill();
 
             // Stroke the line graph
-            ctx.strokeStyle = '#000';
+            ctx.strokeStyle = '#ffffff';
             ctx.stroke();
         });
     }

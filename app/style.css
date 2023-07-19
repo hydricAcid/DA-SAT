@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(30, 30, 30);
 }
 
 #test {
@@ -12,7 +12,7 @@ body {
 
 
 .meter1{
-    color:red;
+
     position: absolute;
     left: 300px;
     width: 300px;
@@ -22,7 +22,7 @@ body {
 }
 
 .meter2{
-    color:red;
+
     position: absolute;
     right: 300px;
     width: 300px;
@@ -31,7 +31,7 @@ body {
     text-align: center;
 }
 .graph1{
-    color:darkmagenta;
+
     position: absolute;
     left: 200px;
     width: 300px;
@@ -40,7 +40,7 @@ body {
 }
 
 .graph2{
-    color:darkmagenta;
+
     position: absolute;
     right: 200px;
     width: 300px;
@@ -114,10 +114,10 @@ body {
   } 
 .container:hover { color: rgba(255,255,255,1); }*/
  
-.gauge-data {
+.gauge-data1 {
     z-index: 4;
 
-    color: rgba(255,255,255,.2);
+    color: #10ff14;
     font-size: 1.5em;
     line-height: 25px;
     position: absolute;
@@ -129,16 +129,32 @@ body {
 
 }
 
+.gauge-data2 {
+  z-index: 4;
+
+  color: #1e30f4;
+  font-size: 1.5em;
+  line-height: 25px;
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
 
 #chartContainer1 {
     width: 500px;
     height: 300px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
   }
 
 
 #chartContainer2 {
   width: 500px;
   height: 300px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
 }
