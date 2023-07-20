@@ -14,9 +14,13 @@ So far, I've been running it locall on my computer using Apache Webserver. In te
 Below is a piece of sample code from cpuInsert.py:
   
 ```python
-    def insert_line(content):
-    timestamp = int(time.time())  # Get the current Unix timestamp
-    cursor.execute("INSERT INTO lines (content, timestamp) VALUES (?, ?)", (content, timestamp))
+def delete_oldest_entry():
+    cursor.execute("SELECT id FROM lines ORDER BY timestamp ASC LIMIT 1") # SQL here
+    oldest_id = cursor.fetchone()[0]
+    cursor.execute("DELETE FROM lines WHERE id = ?", (oldest_id,)) # and here
     conn.commit()
 ```
+The above function is called once the number of rows in the database exceeds a certain amount, and deletes the oldest entry in the database. The oldest entry can be found through a column called 'timestamp' in the table. The timestamp column records time using the Unix Epoch (The number of seconds elapsed since January 1 1970 midnight UTC) and shows the timestamp when the row was inserted.
 
+3. After these scripts are executed repeatedly, we can get enough data to start to form visualisations. Below are some images of some databases used in the project:
+  
