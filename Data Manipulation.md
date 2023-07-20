@@ -61,5 +61,7 @@ The below JavaScript excerpt then fetches the data using the PHP code above
 
 ![image](https://github.com/hydricAcid/DA-SAT/assets/126314765/c14639e7-5abe-4793-a5b9-0a293756d9e9)
 
+All the scripts in the project are executed by a single BASH Script called main.sh. Until main.sh is interrupted by the user, it will infinitely run the scripts using a loop with a 1 second delay, making the visualisations update every second.
+
 
   
