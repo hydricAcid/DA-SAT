@@ -59,6 +59,7 @@ The below JavaScript excerpt then fetches the data using the PHP code above
 ```
 5. Now that the data has been accessed from the database, we can use javascript to edit CSS values and apply other changes that can create data visualisations. Below is an image of a data visualisation created by the JavaScript in this project. The graph is meant to reflect the CPU utilisation of the machine:
 
+![image](https://github.com/hydricAcid/DA-SAT/assets/126314765/c14639e7-5abe-4793-a5b9-0a293756d9e9)
 
 
   
