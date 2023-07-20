@@ -32,7 +32,7 @@ Note that these images do not show the entire database, only parts of it.
 ```php
 <?php
 // Connect to the SQLite database
-$pdo = new PDO('sqlite:../Scripts/data1.db'); # relative path: accesses the parent directory then goes into the Scripts folder to access the database
+$pdo = new PDO('sqlite:../Scripts/data1.db'); // relative path: accesses the parent directory then goes into the Scripts folder to access the database
 
 $query = $pdo->query('SELECT content FROM lines');
 $data = $query->fetchAll(PDO::FETCH_COLUMN, 0);
