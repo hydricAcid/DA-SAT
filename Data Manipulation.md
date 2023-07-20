@@ -28,7 +28,37 @@ The above function is called once the number of rows in the database exceeds a c
 
 Note that these images do not show the entire database, only parts of it.
 
-4. 
+4. Now we can start to send data over to the webserver. We can use a combination of PHP and JavaScript to fetch the data. Below is a PHP example used in this project:
+```php
+<?php
+// Connect to the SQLite database
+$pdo = new PDO('sqlite:../Scripts/data1.db'); # relative path: accesses the parent directory then goes into the Scripts folder to access the database
+
+$query = $pdo->query('SELECT content FROM lines');
+$data = $query->fetchAll(PDO::FETCH_COLUMN, 0);
+
+// Create an array to hold the final data with x and y values for the graph
+$finalData = [];
+for ($i = 0; $i < count($data); $i++) {
+    $finalData[] = ['x' => $i + 1, 'y' => $data[$i]];
+}
+
+echo json_encode($finalData);
+?>
+```
+The below JavaScript excerpt then fetches the data using the PHP code above
+
+```javascript
+...
+        // Fetch updated data from the server
+        fetch('cpuFetch.php') # the name of the php file is cpuFetch.php
+        .then(function(response) {
+            return response.json();
+        })
+...
+```
+5. Now that the data has been accessed from the database, we can use javascript to edit CSS values and apply other changes that can create data visualisations. Below is an image of a data visualisation created by the JavaScript in this project. The graph is meant to reflect the CPU utilisation of the machine:
+
 
 
   
