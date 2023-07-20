@@ -23,4 +23,6 @@ def delete_oldest_entry():
 The above function is called once the number of rows in the database exceeds a certain amount, and deletes the oldest entry in the database. The oldest entry can be found through a column called 'timestamp' in the table. The timestamp column records time using the Unix Epoch (The number of seconds elapsed since January 1 1970 midnight UTC) and shows the timestamp when the row was inserted.
 
 3. After these scripts are executed repeatedly, we can get enough data to start to form visualisations. Below are some images of some databases used in the project:
+![image](https://github.com/hydricAcid/DA-SAT/assets/126314765/c91125c1-1d68-4999-a8e8-2e8d8397f932)
+
   
