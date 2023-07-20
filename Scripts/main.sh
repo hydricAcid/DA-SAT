@@ -26,4 +26,5 @@ while :; do
     python cpuInsert.py
     python ramInsert.py
     sleep 1
+    
 done
