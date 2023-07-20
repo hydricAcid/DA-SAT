@@ -18,5 +18,7 @@ Gathering hardware utulisation information using BASH commands will be the prima
 
 <h2>Criteria 6 - Data Manipulation.md</h2>
 In summary:
+
 'Scripts' folder: mostly server-side stuff
+
 'app' folder: mostly client-side stuff
