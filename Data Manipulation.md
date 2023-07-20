@@ -50,7 +50,7 @@ The below JavaScript excerpt then fetches the data using the PHP code above
 
 ```javascript
 ...
-        // Fetch updated data from the server
+        // Fetch updated data
         fetch('cpuFetch.php') // the name of the php file is cpuFetch.php
         .then(function(response) {
             return response.json();
