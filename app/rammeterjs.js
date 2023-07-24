@@ -1,7 +1,53 @@
+// Change the state and update the indicator
+function setStateRam(state) {
+    const indicator = document.querySelector('.indicatorRam');
+    indicator.classList.remove('greenRam', 'amberRam', 'redRam');
+  
+    switch (state) {
+      case 'greenRam':
+        indicator.classList.add('greenRam');
+        indicator.querySelector('.circleRam').style.backgroundColor = 'green';
+        document.querySelector('.rightBox').style.borderColor= 'green';
+        indicator.querySelector('.textRam').textContent = 'Green/Optimal';
+        break;
+      case 'amberRam':
+        indicator.classList.add('amberRam');
+        indicator.querySelector('.circleRam').style.backgroundColor = 'orange';
+        document.querySelector('.rightBox').style.borderColor= 'orange';
+        indicator.querySelector('.textRam').textContent = 'Amber/Warning';
+        break;
+      case 'redRam':
+        indicator.classList.add('redRam');
+        indicator.querySelector('.circleRam').style.backgroundColor = 'red';
+        document.querySelector('.rightBox').style.borderColor= 'red';
+        indicator.querySelector('.textRam').textContent = 'Red/Critical';
+        break;
+      default:
+        // Handle invalid state
+        break;
+    }
+  }
+
+
+
 // Function to update the 'data' element with the percentage value
 function updatePercentageValue(percentage) {
-    var dataElement = document.querySelector('.gauge-data2 #percentmeter2');
-    dataElement.textContent = percentage + '%';
+    var dataElementcpu = document.querySelector('.gauge-data2 #percentmeter2');
+    var ramSummaryElement = document.querySelector('#ramSummary #percent');
+    dataElementcpu.textContent = percentage + '%';
+
+    if (percentage <= 39) {
+        ramSummaryElement.textContent = 'Your RAM is running at ' + percentage + '%' + ' usage. The RAM is exhibiting OPTIMAL performance.'; 
+        setStateRam('greenRam');
+    }
+    if (percentage > 39 && percentage <= 69) {
+        ramSummaryElement.textContent = 'Your RAM is running at ' + percentage + '%' + ' usage. Maintaining this state is fine, but power consumption may be increased.'; 
+        setStateRam('amberRam');
+    }
+    if (percentage > 70) {
+        ramSummaryElement.textContent = 'Your RAM is running at ' + percentage + '%' + ' usage. The RAM is under extremely heavy load. It is recommended to kill high demanding processes.'; 
+        setStateRam('redRam');
+    }
 }
 
 // Function to convert a value between 0 and 100 to a rotation in turns

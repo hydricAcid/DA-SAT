@@ -1,10 +1,10 @@
-2076,Isolate+,25.0
-2859,firefox,25.0
-1750,librewo+,18.8
-1370,awesome,12.5
-1447,picom,6.2
-2506,electron,6.2
-115013,top,6.2
+1172,kwin_wa+,106.7
+31674,librewo+,13.3
 1,systemd,0.0
 2,kthreadd,0.0
 3,rcu_gp,0.0
+4,rcu_par+,0.0
+5,slub_fl+,0.0
+6,netns,0.0
+11,mm_perc+,0.0
+13,rcu_tas+,0.0

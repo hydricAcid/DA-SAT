@@ -3,7 +3,7 @@ body {
 }
 
 #test {
-    color: rgb(0, 0, 255);
+    color: #00ffd0;
     margin: auto;
     width: 50%;
     text-align: center;
@@ -16,7 +16,28 @@ body {
 
 #cpuSummary p {
   color: #00ffd0;
+  position: absolute;
+  left: 300px;
+  top: 1600px;
+  width: 350px;
+  height: 100px;
 }
+
+#ramSummary p {
+  color: #00ffd0;
+  position: absolute;
+  right: 300px;
+  top: 1600px;
+  width: 350px;
+  height: 100px;
+}
+
+#cpuSummary, #ramSummary {
+  font-size: 25px;
+  font-weight: bolder;
+
+}
+
 .cpuTitle {
   position:absolute;
   left: 350px;
@@ -40,10 +61,10 @@ body {
   background: #636363;
   padding: 20px;
   width: 600px;
-  height: 1650px;
+  height: 1600px;
   left: 150px;
   position: absolute;
-  border: 8px solid#00ffd0;
+  border: 8px solid;
   top:200px;
   z-index: -1;
 
@@ -54,10 +75,10 @@ body {
   background: #636363;
   padding: 20px;
   width: 600px;
-  height: 1650px;
+  height: 1600px;
   right: 150px;
   position: absolute;
-  border: 8px solid#00ffd0;
+  border: 8px solid;
   top: 200px;
   z-index: -1;
 
@@ -234,4 +255,85 @@ body {
   width: 500px;
   height: 300px;
   border: 1px solid #ffffff;
+}
+
+
+/* Indicator container */
+.indicatorCpu {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 200px;
+  top: 1500px;
+
+}
+
+/* Circle */
+.circleCpu {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Text */
+.textCpu {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* Styles for each state */
+.greenCpu {
+
+  color: green;
+}
+
+.amberCpu {
+
+  color: orange;
+}
+
+.redCpu {
+
+  color: red;
+}
+
+/* Indicator container */
+.indicatorRam {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 320px;
+  top: 1500px;
+
+}
+
+/* Circle */
+.circleRam {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Text */
+.textRam {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* Styles for each state */
+.greenRam {
+
+  color: green;
+}
+
+.amberRam {
+
+  color: orange;
+}
+
+.redRam {
+
+  color: red;
 }
