@@ -6,7 +6,7 @@ function updateData() {
             cpuDataList.innerHTML = ''; // Clear previous data
 
             data.forEach(function (item, index) {
-                cpuDataList.innerHTML += `<li style="list-style-type: none;">${index + 1}. PID: ${item.PID}, Process: ${item.Process}, Usage: ${item.Usage}</li>`;
+                cpuDataList.innerHTML += `<li style="list-style-type: none;">${index + 1}. PID: ${item.PID}, Name: ${item.Process}, Usage: ${item.Usage}</li>`;
             });
         })
         .catch(error => {

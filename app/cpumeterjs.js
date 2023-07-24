@@ -1,12 +1,16 @@
 // Function to update the 'data' element with the percentage value
+
 function updatePercentageValuecpu(percentage) {
     var dataElementcpu = document.querySelector('.gauge-data1 #percentmeter1');
+    var cpuSummaryElement = document.querySelector('#cpuSummary #percent');
     dataElementcpu.textContent = percentage + '%';
+    cpuSummaryElement.textContent = percentage;
 }
+
 
 // Function to convert a value between 0 and 100 to a rotation in turns
 function valueToRotationTurnscpu(value) {
-
+    
     // Calculate the rotation value in turns (0 to 0.5 turns)
     var rotationTurnscpu = value / 200;
 
@@ -43,7 +47,9 @@ function fetchDataAndRotatecpu() {
         }
     };
     xhr.send();
+
 }
+
 
 // Update the rotation every second
 fetchDataAndRotatecpu();

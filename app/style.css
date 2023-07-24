@@ -10,19 +10,42 @@ body {
     padding: 10px;
     font-size: 80px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
 }
 
+#cpuSummary p {
+  color: #00ffd0;
+}
+.cpuTitle {
+  position:absolute;
+  left: 350px;
+  font-size: 50px;
+  top: 200px;
+  color: #10ff14;
+  font-weight: bolder;
+}
+
+.ramTitle {
+  position:absolute;
+  right: 350px;
+  font-size: 50px;
+  top: 200px;
+  color: #1e30f4;
+  font-weight: bolder;
+}
 
 .leftBox {
   border-radius: 25px;
   background: #636363;
   padding: 20px;
   width: 600px;
-  height: 1150px;
+  height: 1650px;
   left: 150px;
   position: absolute;
   border: 8px solid#00ffd0;
   top:200px;
+  z-index: -1;
 
 }
 
@@ -31,11 +54,12 @@ body {
   background: #636363;
   padding: 20px;
   width: 600px;
-  height: 1150px;
+  height: 1650px;
   right: 150px;
   position: absolute;
   border: 8px solid#00ffd0;
   top: 200px;
+  z-index: -1;
 
 }
 
@@ -61,23 +85,34 @@ body {
 
 #cpuListData {
   position:absolute;
-  left: 220px;
+  left: 175px;
   top:600px;
+  color: #10ff14;
 
 }
 
 #ramListData {
   position:absolute;
-  right: 420px;
+  right: 200px;
   top:600px;
+  color: #1e30f4;
 
+}
+
+#cpuListData, #ramListData {
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: black;
+  padding: 5px;
+  border-radius: 5px;
+  border: 5px solid #00ffd0;
 }
 .graph1{
 
     position: absolute;
     left: 220px;
     width: 300px;
-    top:950px;
+    top:1050px;
 
 }
 
@@ -86,7 +121,7 @@ body {
     position: absolute;
     right: 220px;
     width: 300px;
-    top:950px;
+    top:1050px;
 
 
 }
