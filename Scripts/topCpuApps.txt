@@ -1,0 +1,10 @@
+2076,Isolate+,25.0
+2859,firefox,25.0
+1750,librewo+,18.8
+1370,awesome,12.5
+1447,picom,6.2
+2506,electron,6.2
+115013,top,6.2
+1,systemd,0.0
+2,kthreadd,0.0
+3,rcu_gp,0.0

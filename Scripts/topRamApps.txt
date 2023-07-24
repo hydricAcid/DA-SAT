@@ -1,10 +1,10 @@
 1750,librewo+,7.3
-2550,electron,4.6
+2550,electron,4.4
 2859,firefox,4.0
-2594,electron,3.5
+2594,electron,3.3
 2331,Isolate+,2.6
 6573,Isolate+,2.5
 1987,WebExte+,2.5
-2085,Isolate+,2.4
 2471,code-oss,2.3
-2076,Isolate+,1.9
+2085,Isolate+,2.2
+2076,Isolate+,2.1
