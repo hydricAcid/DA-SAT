@@ -45,7 +45,7 @@ function updatePercentageValuecpu(percentage) {
     }
     if (percentage > 80) {
         cpuSummaryElement.textContent = 'Your CPU is running at ' + percentage + '%' + ' usage. The CPU is under extremely heavy load. It is recommended to kill high demanding processes.'; 
-        setStateCppu('redCpu');
+        setStateCpu('redCpu');
     }
 }
 
