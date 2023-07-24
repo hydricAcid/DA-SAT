@@ -22,9 +22,13 @@ while :; do
         
     echo "$cpu_usage" > cpuFile.txt
 
+    top -b -n 1 -o %CPU | grep -E '^\s*[0-9]+' | head -n 10 | awk '{print $1 "," $12 "," $9}' > topCpuApps.txt
+    top -b -n 1 -o %MEM | grep -E '^\s*[0-9]+' | head -n 10 | awk '{print $1 "," $12 "," $10}' > topRamApps.txt
     ./ramRead.sh
     python cpuInsert.py
     python ramInsert.py
+    python processInsertCpu.py
+    python processInsertRam.py
     sleep 1
     
 done

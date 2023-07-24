@@ -5,12 +5,11 @@
     <head>
         <title>Test title</title>
         <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="js.js"></script>
     </head>
     <body>
-        <h1 id="test">Hello world</h1>
-
-
+        <h1 id="test">Hardware Statistics</h1>
+        <div class="rightItems">
+        <div class="leftBox"></div>
         <div class="meter1">
             <div class="container">
                 <div class="gauge-a"></div>
@@ -22,7 +21,14 @@
             </div>
 
         </div>
+        
+        <div id="cpuListData"><p>placeHolderText</p></div>
 
+        <div id="chartContainer1" class="graph1"></div>
+        </div>
+        
+        <div class="leftItems">
+        <div class="rightBox"></div>
         <div class="meter2">
             <div class="container">
                 <div class="gauge-a"></div>
@@ -35,19 +41,18 @@
 
         </div>
 
-
-
-        <div id="chartContainer1" class="graph1"></div>
-
-
+        <div id="ramListData"><p>placeHolderText</p></div>
 
         <div id="chartContainer2" class="graph2"></div>
+        </div>
         
         
         <script src="cpujs.js"></script>
         <script src="ramjs.js"></script>
         <script src="cpumeterjs.js"></script>
         <script src="rammeterjs.js"></script>
+        <script src="cpuProcessList.js"></script>
+        <script src="ramProcessList.js"></script>
 
     </body>
 </html>

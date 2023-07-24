@@ -1,0 +1,10 @@
+84270,librewo+,8.3
+198642,firefox,5.8
+178480,electron,4.2
+178525,electron,3.4
+274295,spotify,3.3
+274372,spotify,3.2
+348531,Isolate+,3.2
+250717,Isolate+,3.1
+84460,WebExte+,3.1
+274317,spotify,2.8

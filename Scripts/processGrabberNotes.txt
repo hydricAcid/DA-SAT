@@ -1,0 +1,8 @@
+
+for CPU
+top -b -n 1 -o %CPU | grep -E '^\s*[0-9]+' | head -n 10 | awk '{print $1 "," $12 "," $9}' > top_cpu_applications.txt
+
+for RAM
+top -b -n 1 -o %MEM | grep -E '^\s*[0-9]+' | head -n 5 | awk '{print $1 "," $12 "," $10}' > top_ram_applications.txt
+
+
