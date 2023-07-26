@@ -22,3 +22,9 @@ In summary:
 'Scripts' folder: mostly server-side stuff
 
 'app' folder: mostly client-side stuff
+
+<h2>Criteria 7 - https://drive.google.com/file/d/10YjACciQnFL7sPT0jr2U4VYZOtNlUUOh/view?usp=sharing</h2>
+
+here's some images too:
+
+
