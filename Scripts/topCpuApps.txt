@@ -1,10 +1,10 @@
-1172,kwin_wa+,106.7
-31674,librewo+,13.3
+2450,librewo+,81.2
+215740,Isolate+,31.2
+744,Xorg,12.5
+209821,Isolate+,12.5
+2065,picom,6.2
+2664,WebExte+,6.2
+222372,top,6.2
 1,systemd,0.0
 2,kthreadd,0.0
 3,rcu_gp,0.0
-4,rcu_par+,0.0
-5,slub_fl+,0.0
-6,netns,0.0
-11,mm_perc+,0.0
-13,rcu_tas+,0.0
