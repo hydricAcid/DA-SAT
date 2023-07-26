@@ -26,5 +26,10 @@ In summary:
 <h2>Criteria 7 - https://drive.google.com/file/d/10YjACciQnFL7sPT0jr2U4VYZOtNlUUOh/view?usp=sharing</h2>
 
 here's some images too:
+![image](https://github.com/hydricAcid/DA-SAT/assets/126314765/48eb0c80-0b4e-447b-8768-0249af6ba4fc)
+![image](https://github.com/hydricAcid/DA-SAT/assets/126314765/31a3a695-ac81-4ba7-a8f9-5109df75cbf2)
+![image](https://github.com/hydricAcid/DA-SAT/assets/126314765/b3d3d3ef-2233-4672-a09b-f63967754fd0)
+
+
 
 
