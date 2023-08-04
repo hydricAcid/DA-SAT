@@ -46,7 +46,7 @@ Here is the evaluation of the dynamic data presentation in terms of the evaluati
   <li>Space - The various elements of the dynamic data presentation are spaced out evenly to ensure that the user can quickly find the specific graph or element they need. Since the dynamic data presentation is also on a web page, a user can also zoom in and out as they please.</li>
 </ol>
 
-During Criteria 5, my final design of the solutionh showed pie charts spanning the middle of the page, however they were not incorporated in the final product. This is because I later found out that pie charts were taking up too much space, and they would need labels and descriptors for each 'slice' too, taking up even more space, and it just made the presentation look bad. So I decided to not add the pie charts completely.
+During Criteria 5, my final design of the solution showed pie charts spanning the middle of the page, however they were not incorporated in the final product. This is because I later found out that pie charts were taking up too much space, and they would need labels and descriptors for each 'slice' too, taking up even more space, and it just made the presentation look bad. So I decided to not add the pie charts completely.
 
 <h2>Criteria 10 - Assessing Project Plan</h2>
 
