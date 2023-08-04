@@ -30,6 +30,29 @@ here's some images too:
 ![image](https://github.com/hydricAcid/DA-SAT/assets/126314765/31a3a695-ac81-4ba7-a8f9-5109df75cbf2)
 ![image](https://github.com/hydricAcid/DA-SAT/assets/126314765/b3d3d3ef-2233-4672-a09b-f63967754fd0)
 
+<h2>Criteria 8 - https://docs.google.com/document/d/1mQTiOXjhpKghWsN8gBJfYjCW3xHe2lAgi-iijeSmTgg/edit</h2>
+
+File manage skills.
+
+<h2>Criteria 9 - Evaluation</h2>
+
+In order to evaluate the dynamic data presentation, I would need to run a bunch of theoretical scenarios where a user may need to use this solution. For example, say a user's RAM usage is extremely high and they want to find out the name of the process that is responsible for this, so they can end the process. I would have a tester (if I had one) to test if they are able to quickly find the process. Another example is if a user just wants to know what to do if their CPU usage is high, but they need all of their apps running. I would have my fake tester test the solution to fin the System State description at the bottom which recommends the user some actions depending on the system state.
+
+
+Here is the evaluation of the dynamic data presentation in terms of the evaluation criteria:
+<ol>
+  <li>Usability - The dynamic data presentation is easy to navigate, only requiring the user to scroll up and down the page to access the entire presentation. All the elements of the presentation are also straightforward, and the values are updated frequently to ensure data is up to date..</li>
+  <li>Flexibility - The dynamic data presentation has multiple ways for a user to read the hardware statistics.  This ensures that the dynamic data presentation can meet various needs of the user, like if they wanted to find out the names of processes using up the most resources, or if they just wanted the current state of their computer.</li>
+  <li>Space - The various elements of the dynamic data presentation are spaced out evenly to ensure that the user can quickly find the specific graph or element they need. Since the dynamic data presentation is also on a web page, a user can also zoom in and out as they please.</li>
+</ol>
+
+During Criteria 5, my final design of the solutionh showed pie charts spanning the middle of the page, however they were not incorporated in the final product. This is because I later found out that pie charts were taking up too much space, and they would need labels and descriptors for each 'slice' too, taking up even more space, and it just made the presentation look bad. So I decided to not add the pie charts completely.
+
+<h2>Criteria 10 - Assessing Project Plan</h2>
+
+I'd say that the most adjusted part of the project plan was Criteria 7. Because of the nature of the dynamic data presentation compared to just a regular static data presentation, significantly more work had to be done to get it working. Because information was also coming from a local source, I had to figure out how to extract that information then clean it too. Because of the security features of modern web browsers, the don't allow most files on a local person's computer to be read, therefore I had to put the information in a database using a database software then had the browser access that informationm using JavaScript and PHP. This solution also required a significant amount of coding, mostly in Python and Javascript, as the process of gathering the necessary data was complicated. Therefore, this project took way more time because much more effort was needed compared to just simply making a poster or infographic. There was also the process of fixing bugs and other problems that come with software development but don't come with data analytics.
+
+Regarding the effectiveness of the project plan, I'd say it was only effective in the beginning. Then after that, I just worked whenever I felt like it. I guess it was due to the unique nature of the project, as mentioned before and that I just felt like working on this whenever I felt like it. The fact that I also had software development running alongside this subject, ahd having to do work for my project there too is also a factor that has impacted the project plan.
 
 
 
